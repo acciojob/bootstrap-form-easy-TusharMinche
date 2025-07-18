@@ -9,7 +9,7 @@
 </head>
 <body>
     <form class="row g-3">
-        <!-- Email and Password in the same row -->
+        <!-- First Name, Last Name, and Email -->
 		<div class="col-md-4">
             <label for="first-name-input" class="form-label">First Name</label>
             <input type="text" class="form-control" id="first-name-input" required>
@@ -23,13 +23,16 @@
             <input type="email" class="form-control" id="email-input" required>
         </div>
 
+        <!-- College and Roll Number -->
         <div class="col-md-6">
             <label for="college-input" class="form-label">College</label>
             <input type="text" class="form-control" id="college-input" required>
         </div>
 
-       <div class="col-md-3">
-	        <select class="form-select " aria-label="Default select example" required>
+        <!-- Graduation Year (Updated ID) -->
+        <div class="col-md-3">
+	        <label for="grad-year-select" class="form-label">Graduation Year</label>
+	        <select class="form-select" id="grad-year-select" aria-label="Default select example" required>
 			  <option selected disabled>Open this select menu</option>	
 			  <option value="2020">2020</option>
 			  <option value="2021">2021</option>
@@ -37,18 +40,19 @@
 			  <option value="2023">2023</option>
 			</select>
 		</div>
+
+        <!-- Roll Number -->
        <div class="col-md-3">
             <label for="roll-no-input" class="form-label">Roll No.</label>
             <input type="text" class="form-control" id="roll-no-input" required>
         </div>
 
-        
-
+        <!-- Terms and Conditions -->
         <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
-    <label class="form-check-label" for="conditions-checkbox">Agreento terms and conditions</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit form</button>
+            <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
+            <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit form</button>
     </form>
 
     <script type="text/javascript" src="./script.js"></script>
